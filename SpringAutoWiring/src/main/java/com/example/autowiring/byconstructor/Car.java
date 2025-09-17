@@ -1,0 +1,20 @@
+package com.example.autowiring.byconstructor;
+
+public class Car {
+    private Specification specification;
+
+    public Car(Specification specification) {
+        this.specification = specification;
+        System.out.println("Constructor called");
+    }
+
+//    public void setSpecification(Specification specification) {
+//        this.specification = specification;
+//    }
+
+    public void getDetails(){
+
+        System.out.println(specification.toString());
+    }
+
+}
