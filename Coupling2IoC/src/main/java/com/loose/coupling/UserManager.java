@@ -1,5 +1,4 @@
 package com.loose.coupling;
-
 public class UserManager {
     private final UserDataProvider userDataProvider;
     public UserManager(UserDataProvider userDataProvider) {
@@ -8,6 +7,4 @@ public class UserManager {
     public String getUserInfo(){
        return userDataProvider.getUserDetails();
     }
-
-
 }
